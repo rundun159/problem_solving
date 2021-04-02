@@ -8,10 +8,6 @@ class GIVEN_STRING:
     def f(self, idx):
         if idx >= self.len:
             return 0
-        if idx == self.len-1:
-            if self.s[idx] != '0':
-                self.cache[idx] = 1
-                return 1
         if self.cache[idx] != -1:
             return self.cache[idx]
         else:
@@ -21,6 +17,8 @@ class GIVEN_STRING:
             else:
                 ret = 0
                 ret += self.f(idx+1)
+                if idx+1 == self.len:
+                    ret += 1
                 if int(self.s[idx:idx+2]) <= 26:
                     ret += self.f(idx+2)
                     if idx+2 == self.len:
