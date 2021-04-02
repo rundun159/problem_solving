@@ -44,7 +44,7 @@ class Solution(object):
             # print(1)
             # robot.print_robot()
             if robot.pos != [0,0]:
-                return False
+                return
             else:
                 return True
         else:
@@ -56,8 +56,6 @@ class Solution(object):
                 return False
             else:
                 return True
-
-
 inst1 = "GGLLGG"
 inst2 = "GGLGLGRG"
 sol = Solution()
