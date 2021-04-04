@@ -38,3 +38,16 @@ It switches index with the last one with the one that will be removed. <br>
 <h5>Checked Solution</h5>
 <hr>
 </div>
+
+## Brute Force
+<div>
+<h5>221. Maximal Square (2021.4.4) </h5>
+Neither BFS nor DFS. <br>
+I failed to find any good way to optimize, but calculated brute force can work in given time.
+Even this algorithm O(n^3), n is at most 3*10^2. 
+
+<br>
+<h5>About 50min. Cost</h5>
+<hr>
+</div>
+
