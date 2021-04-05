@@ -11,6 +11,16 @@ Otherwise, it will go farther from the origin. <br>
 
 
 ## DFS
+<div>
+<h5>17. Letter Combinations of a Phone Number (2021.4.5) </h5>
+DFS임을 알고 접근했다.<br>
+python에서 DFS를 구현한것이 처음이라 어색했지만, <br>결국 list에 append하고 pop하는 구조로
+Stack을 사용해서 구현하면 된다.
+<h5>21min. cost</h5>
+<hr>
+</div>
+
+
 
 ## BFS
 <div>
