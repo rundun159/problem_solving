@@ -87,3 +87,19 @@ Even this algorithm O(n^3), n is at most 3*10^2.
 <hr>
 </div>
 
+## Topological Sorting
+<div>
+<h5>207. Course Schedule (2021.4.6) </h5>
+문제 자체가 위상 정렬의 문제다. 위상 정렬 알고리즘이 기억이 안나서 Solution을 참고했다. <br>
+python으로 구현하는 방식은 defaultdict, deque를 사용한다. 
+
+1. defaultdict로 (array로 안하는 이유는 아예 edge가 없는 node도 존재할수 있기 때문?) <br>
+각 node들의 incoming edge의 수, outgoing edge의 목적지 node들을 저장한다. <br>
+2. deque에 incoming edge가 없는 node들을 저장한다. <br>
+3. deque에서 하나씩 빼면서 edge를 없애고, 해당 edge의 목적지의 node의 incoming edge의 수를 하나 줄인다. <br>
+3-1. 해당 목적지 node의 incoming edge의 수가 0이면 deque에 추가 <br>
+4. deque가 비어있을때, 모든 edge가 제거되었다면, 해당 그래프는 topological sort가 가능한 그래프다. <br>
+<br>
+<h5>Used Solution</h5>
+<hr>
+</div>
