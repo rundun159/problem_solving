@@ -24,8 +24,8 @@ Stack을 사용해서 구현하면 된다.
 <h5>394. Decode String (2021.4.6) </h5>
 대부분의 괄호 문제는 Stack을 활용해서 해결한다.
 Stack과 재귀는 비슷한 메커니즘을 갖고 있기에, 재귀를 사용해서 풀게 되었다. <br>
-처음 풀었을 때에는 main bfs, small bfs로 나눠서 두개로 구현했지만,
-풀고 난 후에 refactoring을 거쳐서 main_bfs 하나만을 갖도록 수정했다.
+처음 풀었을 때에는 main dfs, small dfs로 나눠서 두개로 구현했지만,
+풀고 난 후에 refactoring을 거쳐서 main_dfs 하나만을 갖도록 수정했다.
 <h5>34min. cost</h5>
 <hr>
 </div>
