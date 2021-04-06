@@ -29,6 +29,14 @@ Stack과 재귀는 비슷한 메커니즘을 갖고 있기에, 재귀를 사용�
 <h5>34min. cost</h5>
 <hr>
 </div>
+<div>
+<h5>98. Validate Binary Search Tree (2021.4.6) </h5>
+Binary Tree에서 각 subtree의 조건을 안다는 가정하에 구현했다. (Post Order)<br>
+각 Subtree의 조건을 안다는 가정이 DFS로 이어지게 된다.
+DFS는 재귀와 친하다.
+<h5>19min. cost</h5>
+<hr>
+</div>
 
 
 
