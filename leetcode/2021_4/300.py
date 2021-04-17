@@ -16,6 +16,21 @@ class TH:
         self.cache[idx] = ret
         return ret
 
+    def dp_recursion_bottom_up(self):
+        self.memo = [ -1 for i in self.nums]
+        self.memo[0] = 1
+        for idx,v in enumerate(self.nums):
+            if idx == 0:
+                continue
+            ret = 1
+            for prev_idx in range(idx):
+                if self.nums[prev_idx] < self.nums[idx]:
+                    ret = max(ret, self.memo[prev_idx]+1)
+            self.memo[idx] = ret
+        ret = -1
+        for m in self.memo:
+            ret = max(ret, m)
+        return ret
 
 class Solution:
     def lengthOfLIS(self, nums) -> int:
