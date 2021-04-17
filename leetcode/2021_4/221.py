@@ -58,11 +58,6 @@ class Solution(object):
     def maximalSquare(self, matrix):
         th = TH(matrix)
         return th.do_main()
-
-        """
-        :type matrix: List[List[str]]
-        :rtype: int
-        """
 #
 # sol = Solution()
 # # val = sol.maximalSquare([["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]])
