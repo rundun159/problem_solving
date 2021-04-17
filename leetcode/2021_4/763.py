@@ -10,6 +10,19 @@ class TH:
         self.alpha_list = [str(i) for i in range(ord('a'), ord('z') + 1)]
         for idx, c in enumerate(S):
             self.dict[c].append(idx)
+
+    def greedy(self):
+        pass
+        last = {c: i for i, c in enumerate(self.S)}
+        self.greedy_ret = []
+        anchor = j = 0
+        for i, c in enumerate(self.S):
+            j = max(j, last[c])
+            if i == j:
+                self.greedy_ret.append(i - anchor + 1)
+                anchor = i + 1
+
+    def use_bfs(self):
         q = deque()
         self.part_num = 0
         self.ret = []
@@ -42,6 +55,7 @@ class TH:
 
 
 class Solution:
-    def partitionLabels(self, S: str) :
+    def partitionLabels(self, S: str) -> List[int]:
         th = TH(S)
-        return th.ret
+        th.greedy()
+        return th.greedy_ret
